@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
+}
+li {
+    list-style-type: none;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 1rem;
+}
+h1 {
+    color:palevioletred;
+    margin-bottom: 1rem;
+
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    box-shadow: 2px 4px rgba(82, 80, 80, 0.479);
+}
+
+main form {
+    margin-bottom: 1rem;
+	display: flex;
+    align-items: center;
+
+}
+
+.tarefa {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    border: 1px solid rgb(185, 183, 183);
+    box-shadow: 1px 1px rgba(47, 45, 45, 0.479);
+
+}
+
+.tarefa:focus {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/*Lista a fazer*/
+.to-do-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.to-do-list li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+
+}
+.to-do-list li input {
+    margin-right: 0.5rem;
+}
+.to-do-list li button {
+
+    margin-left: auto;/*Coloca na extrema esquerda*/
+    visibility: hidden;
+}
+
+li:hover button {
+    visibility: visible;
+}
+/*Lista feitos*/
+.done-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.done-list li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+}
+.done-list li input{
+    margin-right: 0.5rem;
+}
+.done-list span {
+    text-decoration: line-through;
+}
+.done-list li button {
+
+    margin-left: auto;/*Coloca na extrema esquerda*/
+    visibility: hidden;
+}
+.done-list li:hover button {
+    visibility: visible;
+}
+li > button {
+    background-color: white;
+    color: palevioletred;
+}
+
+/*Footer do card*/
+main footer {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    flex-wrap: wrap;
+}
+
+main footer .btns {
+    display: flex;
+    width: 45%;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.btn {
+    font-size: 0.95em;
+    color: #7e7e7e;
+    background-color: white;
+
+    border: 1px solid transparent;
+	background-color: transparent;
+	padding: 0.2em 0.3em;
+}
+
+.ativo {
+    border: 1px solid palevioletred;
+}
+
