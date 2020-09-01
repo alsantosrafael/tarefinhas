@@ -19,7 +19,7 @@ o usuário pode controlar as tarefas diárias a serem feitas em uma interface co
 
 ### Demonstração
 ---
-
+![Tarefinhas Demo](https://github.com/alsantosrafael/tarefinhas/blob/master/demo_tarefinhas.gif)
 
 ### Instruções de uso
 1. Clone o repositorio de link https://github.com/alsantosrafael/Desafio-do-Foodfy
